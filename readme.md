@@ -2,6 +2,18 @@
 
 frontend link https://user-management-frontend-kappa.vercel.app/
 
+### Running on Local
+
+1. clone and cd into the directory
+2. npm install
+3. docker compose up -d
+4. node index
+5. test manually with thunderclient, postman or curl (optional)
+6. cd into frontend
+7. npm install & npm run dev
+
+server runs at 5000 and next app at 3000 by default
+
 ## The Challenge
 
 Build a user management system that can:
