@@ -1,7 +1,8 @@
 # Asset Insight Coding Challenge 
 
-frontend link https://user-management-frontend-kappa.vercel.app/
-frontend github https://github.com/rohan03122001/user-management-frontend
+- frontend link https://user-management-frontend-kappa.vercel.app/
+- frontend github https://github.com/rohan03122001/user-management-frontend
+
 ### Running on Local
 
 1. clone and cd into the directory
@@ -118,3 +119,8 @@ Made sure users can't break things:
 - Name: Must be 2-50 chars
 - Email: Has to be valid format
 - Role: Only "Admin", "User", or "Editor"
+
+## Deployment
+- Backend deployed on DigitalOcean with SSL encryption (HTTPS)
+- Frontend hosted on Vercel
+- Containerized database for consistent environments
