@@ -1,7 +1,7 @@
-# Asset Insight Coding Challenge - My Approach
+# Asset Insight Coding Challenge 
 
 frontend link https://user-management-frontend-kappa.vercel.app/
-
+frontend github https://github.com/rohan03122001/user-management-frontend
 ### Running on Local
 
 1. clone and cd into the directory
