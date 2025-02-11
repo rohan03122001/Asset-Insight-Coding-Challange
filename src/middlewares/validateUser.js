@@ -15,7 +15,8 @@ const userValidationRules = [
     .notEmpty()
     .withMessage("Name is required")
     .isLength({ min: 2, max: 50 })
-    .withMessage("Name must be 2-50 characters long"),
+    .withMessage("Name must be 2-50 characters long")
+    .trim(),
 
   body("email")
     .notEmpty()
@@ -27,7 +28,8 @@ const userValidationRules = [
   body("role")
     .optional()
     .isIn(["Admin", "User", "Editor"])
-    .withMessage("Role must be Admin, User, or Editor"),
+    .withMessage("Role must be Admin, User, or Editor")
+    .default("User"),
 ];
 
 const checkValidationResult = (req, res, next) => {
@@ -38,7 +40,12 @@ const checkValidationResult = (req, res, next) => {
   next();
 };
 
+const updateValidationRules = userValidationRules.map((rule) =>
+  rule.optional()
+);
+
 module.exports = {
   userValidationRules,
+  updateValidationRules,
   checkValidationResult,
 };
