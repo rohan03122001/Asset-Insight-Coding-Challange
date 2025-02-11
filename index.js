@@ -1,10 +1,12 @@
 const express = require("express");
 const app = express();
+const connectDB = require("./src/config/database");
 
-// Middlewares
+// Connect Database
+connectDB();
+
 app.use(express.json());
 
-// Test Route
 app.get("/", (req, res) => {
   res.send("Hello, User Management!");
 });
