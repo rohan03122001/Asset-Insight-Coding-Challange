@@ -1,0 +1,27 @@
+
+Asset Insight Coding Challange
+
+BACKEND:
+    The task is to create a web application that produces some kind of user management functionality. 
+    The application should be able to:
+        Display the users in a list/table.
+        Have the ability to create users.
+        Have the ability to update users.
+        Have the ability to delete users. 
+
+    to build this app we will divide our application logic into structured components
+    (routes → controllers → services → repositories → models)
+    where each layer has a specific task
+
+    when building this app 
+    the main task at hands are:
+        Spinning up correct DB structured our db is ran by docker to ensure easy access and user model contains name email and role
+        building the CRUD for our users
+            Get users should have pagination
+            CREATE users should have appropriate VALIDATION
+            PUT will have validations
+            Delete will Delete
+        We should have at least minimal Logging
+    
+    MAINTAIN CLEAN ARCHITECTURE
+
